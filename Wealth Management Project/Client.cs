@@ -13,18 +13,24 @@ using System.Windows.Forms;
 
 namespace Wealth_Management_Project
 {
+    
+
+
     public partial class Client : Form
     {
+
+        int num = 1;
+
         public Client()
         {
             InitializeComponent();
-            populateListView();
 
         }
 
         private void populateListView()
         {
-            
+            // List of all the clients 
+
             listView1.Items.Add("Sandesh Mahore", 1);
             listView1.Items.Add(" ");
             listView1.Items.Add("Jeff Bezos", 2);
@@ -60,8 +66,20 @@ namespace Wealth_Management_Project
 
             if (clients.Equals(" "))
                 label1.Text = "";
-               
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             
+
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            populateListView();
 
         }
     }

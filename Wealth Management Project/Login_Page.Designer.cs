@@ -82,7 +82,7 @@ namespace Wealth_Management_Project
             this.Password.TabIndex = 4;
             this.Password.Text = "Password";
             // 
-            // Form1
+            // Login_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,8 +92,9 @@ namespace Wealth_Management_Project
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Login_Page";
             this.Text = "Wealth Management Co.";
+            this.Load += new System.EventHandler(this.Login_Page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

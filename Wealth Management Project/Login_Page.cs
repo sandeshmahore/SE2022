@@ -40,5 +40,10 @@ namespace Wealth_Management_Project
             string Password = Console.ReadLine();
 
         }
+
+        private void Login_Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
